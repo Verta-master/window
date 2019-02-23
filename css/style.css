@@ -1052,3 +1052,266 @@ h6 {
   font-size: 18px;
   letter-spacing: 0.075em;
 }
+.calc__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+.calc__wide {
+  width: 770px;
+}
+.calc__aside {
+  width: 340px;
+}
+.calc__field {
+  margin: 0;
+  padding: 0;
+  padding: 35px;
+  width: 100%;
+  margin-bottom: 50px;
+  border: 1px solid #888888;
+}
+.checkbox {
+  display: none;
+}
+.checkbox__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: 1px solid #dcdcdc;
+}
+.checkbox__label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAABKUlEQVQ4jaXSvytHURjH8ZdLEYOSQWSTQUL5A8xEikEirEaryaQY8AewC6WYSBZRksmPLBYmkmwyKMM5t07frh/5furU+Xw6ve/z3OepaD2eUaYasYUerFaVCavDDvqiX8jKgNViM4HB3n+BOWwwyfYx+Z+Wq7COoSQ7xBje8wqrUfMHWCU2MJ5kZ9G/Q4YunOMi3n/SBqYSf4phvOZBhjV0oxPbaPsGtoLpxF9hBC/powwHiW/HLpoKYHOJvxUG8lz61QxLWE6yTmFi9dEvFsAG8FDURmX9dA8coQW9MW8WfkMH5pP3D8J074tghBXINYsGjEbfH0+ux1jZ3XcwQsu5PjEh7FSpniLs5idYKRA+hAU9SbKXWPX1b7AiILxF6KUwxWFh3/6kL7k+Nb7aUeYNAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.checkbox:checked + .checkbox__label {
+  color: #26ca6a;
+}
+.checkbox:checked + .checkbox__label::before {
+  display: none;
+}
+.checkbox:checked + .checkbox__label::after {
+  display: block;
+}
+.calc__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 35px;
+}
+.calc__price p {
+  margin: 0;
+  font-size: 18px;
+}
+.calc__price span {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #dd3236;
+  font-size: 30px;
+  line-height: 36px;
+}
+.calc__btn {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.calc__type {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.calc__img {
+  width: 397px;
+}
+.calc__block {
+  width: 340px;
+}
+.calc__option {
+  margin-bottom: 30px;
+  width: 223px;
+}
+.calc__option--window {
+  width: 340px;
+}
+.calc__option--lam {
+  width: 290px;
+}
+.calc__option--color {
+  width: 410px;
+}
+.calc__label {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.025em;
+}
+.calc__select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid #b8b8b8;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAJCAMAAADaUYZlAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAAb1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt6r1GAAAAJHRSTlMARCcT58wlz7QULdWyDxzSLkbWK+uTIyprL+PIJorKQ2bTR595uPoIAAAAWElEQVQI1zWMVxaAIAwEY0FEsPfe9v5nFI3sV2bfTmidE3K5zoM26PrHPcRNi0BVfFg2MIrIl8h7i16IOHj7SEInHyr2OgExTDCp+2sV/GOOVdyYM7YZHw+cTQTtRr7wIQAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-size: 15px 9px;
+  background-position: right 15px center;
+  outline: none;
+}
+.calc__select::-ms-expand {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+.calc__selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefits__item {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+.benefits__item p {
+  margin: 0;
+  width: calc(100% - 85px);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+}
+.benefits__icon {
+  width: 85px;
+  text-align: center;
+}
+.order {
+  padding: 25px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.025em;
+  text-align: center;
+  background-color: #26ca6a;
+}
+.order__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.order__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order__input {
+  display: block;
+  width: 310px;
+  height: 40px;
+  margin-right: 20px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: 1px solid #b8b8b8;
+}
+.order__input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #888888;
+}
+.order__input::-ms-input-placeholder {
+  opacity: 1;
+  color: #888888;
+}
+.order__input::placeholder {
+  opacity: 1;
+  color: #888888;
+}
+.order__btn {
+  width: 310px;
+  height: 40px;
+  letter-spacing: 0.075em;
+  border: 1px solid #b8b8b8;
+}
