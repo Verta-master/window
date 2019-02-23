@@ -1,0 +1,32 @@
+.menu {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: @green;
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu__item {
+  margin-right: 25px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
+}
