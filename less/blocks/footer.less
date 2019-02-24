@@ -5,6 +5,13 @@
   
   .logo {
     width: 198px;
+    padding-top: 5px;
+  }
+  
+  address {
+    display: block;
+    font-style: normal;
+    margin-bottom: 10px;
   }
 }
 
@@ -22,19 +29,27 @@
   justify-content: flex-start;
   align-items: center;
   width: 400px;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-top: 5px;
   
   li {
-    width: 60%;
+    width: 65%;
     margin-bottom: 10px;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 0.025em;
+    .transition();
     
     &:nth-child(2n) {
-      width: 40%;
+      width: 35%;
+    }
+    
+    &:hover,
+    &:active {
+      color: @red;
+      .transition();
     }
   }
 }
@@ -51,16 +66,22 @@
   line-height: 1.2;
   color: @red;
   letter-spacing: 0.05em;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .footer__contacts {
+  padding-top: 5px;
   font-size: 14px;
   line-height: 1.2;
 }
 
 .footer__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 1.2;
