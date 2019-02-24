@@ -1,3 +1,69 @@
 .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #b8b8b8;
   
+  .logo {
+    width: 198px;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  padding-left: 30px;
+  
+  li {
+    width: 60%;
+    margin-bottom: 10px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    
+    &:nth-child(2n) {
+      width: 40%;
+    }
+  }
+}
+
+.footer__phone {
+  display: block;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.footer__call {
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+  color: @red;
+  letter-spacing: 0.05em;
+}
+
+.footer__contacts {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.025em;
 }
