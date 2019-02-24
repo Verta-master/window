@@ -27,7 +27,7 @@
           </ul>
         </div>
         <a href="tel:+79047687968" class="header__phone">+7-904-768-79-68</a>
-        <span>Ежедневно с 4:00 - 20:00</span>
+        <span class="header__time">Ежедневно с 4:00 - 20:00</span>
       </div>
     </div>
     <nav class="menu">
@@ -85,6 +85,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination promo__pagination"></div>
         <div class="swiper-button-prev promo__prev"></div>
         <div class="swiper-button-next promo__next"></div>
       </div>
@@ -94,7 +95,7 @@
       <div class="block">
         <section class="info">
           <p class="title">Пластиковые окна</p>
-          <p>Окна премиум - один из крупнейших производитель пластиковых окон в г.Нижнекамск. Современное автоматизированное производство по запатентованным технологиям,  контроль качества на каждом этапе, адаптированные под российские климатические условия системы  установки делают наши пластиковые окна лидирующими по количеству продаж вот уже более 25 лет. Мы рады предложить Вам:</p>
+          <p class="info__text">Окна премиум - один из крупнейших производитель пластиковых окон в г.Нижнекамск. Современное автоматизированное производство по запатентованным технологиям,  контроль качества на каждом этапе, адаптированные под российские климатические условия системы  установки делают наши пластиковые окна лидирующими по количеству продаж вот уже более 25 лет. Мы рады предложить Вам:</p>
           <ul class="info__list">
             <li class="info__item">
               <figure class="info__icon">
@@ -521,6 +522,10 @@
       navigation: {
         nextEl: '.promo__next',
         prevEl: '.promo__prev',
+      },
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
       },
       simulateTouch: false,
       preventClicks: false,
