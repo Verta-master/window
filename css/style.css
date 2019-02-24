@@ -1401,3 +1401,77 @@ h6 {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #b8b8b8;
+}
+.footer .logo {
+  width: 198px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  padding-left: 30px;
+}
+.footer__list li {
+  width: 60%;
+  margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+.footer__list li:nth-child(2n) {
+  width: 40%;
+}
+.footer__phone {
+  display: block;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.footer__call {
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #dd3236;
+  letter-spacing: 0.05em;
+}
+.footer__contacts {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
