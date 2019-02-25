@@ -1562,8 +1562,8 @@ h6 {
   margin-top: 40px;
 }
 .fancybox-close-small {
-  top: 35px;
-  right: 20px;
+  top: 0;
+  right: 0;
   padding: 0;
 }
 .fancybox-close-small svg {
@@ -2491,5 +2491,13 @@ a.breadcrumbs__link:active {
   .table__color p {
     padding-top: 2px;
     line-height: 1.2;
+  }
+  .table__line:nth-child(3) img,
+  .table__line:nth-child(4) img,
+  .table__line:nth-child(5) img {
+    width: 15px;
+    height: auto;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
