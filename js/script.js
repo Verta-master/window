@@ -5,7 +5,13 @@ jQuery(function($) {
   $('.menu__btn').click(function() {
     $('.menu').toggleClass('menu--opened');
     $('.menu__list').slideToggle();
-  })
+  });
+  
+  //Additional navigation
+  $('.menu__catalog-btn').click(function() {
+    $('.menu').toggleClass('menu--catalog');
+    $('.menu__catalog-wrap').slideToggle();
+  });
 
   //City choice
   $('.city__btn').click(function(e) {
