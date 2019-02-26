@@ -2,10 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 7px;
+  padding-bottom: 33px;
 }
 
 .card__slider {
   width: 470px;
+  margin: 0;
+}
+
+.card__slide {
+  width: 100% !important;
 }
 
 .card__gallery {
@@ -19,6 +26,7 @@
 .card__next {
   width: 40px;
   height: 60px;
+  top: 48%;
   background-image: url(../img/icons/icon-next-big.png);
   background-size: 33px 60px;
   outline: none;
@@ -39,6 +47,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .card__item {
@@ -53,6 +62,7 @@
 
 .card__normal {
   .reset();
+  padding-top: 5px;
   padding-left: 20px;
   font-size: 20px;
   line-height: 30px;
@@ -61,7 +71,7 @@
 
 .card__price {
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 30px;
 }
