@@ -1,0 +1,102 @@
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__slider {
+  width: 470px;
+}
+
+.card__gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card__prev,
+.card__next {
+  width: 40px;
+  height: 60px;
+  background-image: url(../img/icons/icon-next-big.png);
+  background-size: 33px 60px;
+  outline: none;
+}
+
+.card__prev {
+  transform: rotate(180deg);
+}
+
+.card__info {
+  width: 640px;
+}
+
+.card__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__item {
+  width: 20%;
+  text-align: center;
+  line-height: 1.2;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.card__normal {
+  .reset();
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #7b7b7b;
+}
+
+.card__price {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 30px;
+}
+
+.card__new {
+  margin: 0;
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  color: @red;
+  font-size: 24px;
+}
+
+.card__old {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #7b7b7b;
+  text-decoration: line-through;
+}
+
+.card__btns {
+  display: flex;
+  justify-content: space-between;
+  
+  .btn {
+    width: 48%;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+  }
+}
+
+.card__green {
+  background-color: @green;
+}
