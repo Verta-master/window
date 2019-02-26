@@ -1942,14 +1942,14 @@ a.breadcrumbs__link:active {
   margin: 0;
   margin-right: 45px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   color: #dd3236;
   font-size: 24px;
 }
 .card__old {
   margin: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   font-size: 20px;
   color: #7b7b7b;
   text-decoration: line-through;
@@ -1971,6 +1971,114 @@ a.breadcrumbs__link:active {
 }
 .card__green {
   background-color: #26ca6a;
+}
+.card__green:hover,
+.card__green:active {
+  background-color: #21b05c;
+}
+.system__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.system__list {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.system__info {
+  width: 50%;
+  padding-left: 75px;
+}
+.system__info .block__title {
+  text-align: center;
+}
+.system__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.system__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.system__icon {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.system__text {
+  width: calc(100% - 115px);
+  letter-spacing: 0.025em;
+}
+.system__text p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+.system__text span {
+  font-size: 14px;
+  line-height: 20px;
+}
+.system__tick {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+.system__tick li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #888888;
+}
+.system__tick li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 29px;
+  height: 23px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAABKUlEQVQ4jaXSvytHURjH8ZdLEYOSQWSTQUL5A8xEikEirEaryaQY8AewC6WYSBZRksmPLBYmkmwyKMM5t07frh/5furU+Xw6ve/z3OepaD2eUaYasYUerFaVCavDDvqiX8jKgNViM4HB3n+BOWwwyfYx+Z+Wq7COoSQ7xBje8wqrUfMHWCU2MJ5kZ9G/Q4YunOMi3n/SBqYSf4phvOZBhjV0oxPbaPsGtoLpxF9hBC/powwHiW/HLpoKYHOJvxUG8lz61QxLWE6yTmFi9dEvFsAG8FDURmX9dA8coQW9MW8WfkMH5pP3D8J074tghBXINYsGjEbfH0+ux1jZ3XcwQsu5PjEh7FSpniLs5idYKRA+hAU9SbKXWPX1b7AiILxF6KUwxWFh3/6kL7k+Nb7aUeYNAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-size: 29px auto;
+}
+.system__img {
+  width: 100%;
+  text-align: center;
+}
+.system__about {
+  letter-spacing: 0.025em;
 }
 @media (max-width: 1240px) {
   .wrapper {
