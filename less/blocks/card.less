@@ -70,7 +70,7 @@
   margin: 0;
   margin-right: 45px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   color: @red;
   font-size: 24px;
 }
@@ -78,7 +78,7 @@
 .card__old {
   margin: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   font-size: 20px;
   color: #7b7b7b;
   text-decoration: line-through;
@@ -99,4 +99,9 @@
 
 .card__green {
   background-color: @green;
+  
+  &:hover,
+  &:active {
+    background-color: #21b05c;
+  }
 }
